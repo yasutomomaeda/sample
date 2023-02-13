@@ -1,0 +1,40 @@
+header{
+  justify-content: space-between;
+  display: flex;
+  width: 75%;
+  
+}
+
+.details{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 33%;
+}
+
+.item-logo{
+  width: 150px;
+}
+
+.header-logo{
+  width: 300px;
+}
+
+.nav ul li{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right:80px ;
+}
+
+.nav ul{
+  text-align: center;
+padding-top: 3vh;
+}
+
+
+small{
+  display: block;
+  text-align: center;
+}

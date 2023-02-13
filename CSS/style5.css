@@ -1,0 +1,18 @@
+img{
+  width: 200px;
+  margin-right: 100px;
+}
+
+header{
+  display: flex;
+}
+
+ul{
+  display: flex;
+  align-items: baseline;
+}
+
+ul li{
+  margin-right: 100px;
+  align-items: baseline;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact/style.css">
+  <title>お問い合わせ</title>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="contact-wrapper">
+      <h1>お問い合わせ</h1>
+      <form action="mailto:pannwwpann@gmail.com" enctype="text/plain" method="post">
+        
+        <div class="field-item">
+          <label for="name">お名前</label>
+          <input type="text" name="name" id="name" placeholder="山田太郎">
+        </div>
+        
+        <div class="field-item">
+          <label for="email">メールアドレス</label>
+          <input type="text" name="email" id="email" placeholder="example@gmail.com">
+        </div>
+
+        <div class="field-item">
+          <label for="genre">お問い合わせの種類を選択してください。</label>
+          <select name="genre" id="genre">
+            <option value="" disabled selected>---選択してください---</option>
+            <option value="question">ご質問</option>
+            <option value="opinion">ご意見</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+
+        <div class="field-item">
+          <label for="message">お問い合わせ内容</label>
+          <textarea name="body" id="message" placeholder="お問い合わせ内容を入力してください"></textarea>
+        </div>
+
+        <div>
+          
+          <label for="privacy-policy">
+            <input type="checkbox" name="privacy-policy" id="privacy-policy" hidden>
+            <span class="checkbox-icon"></span>
+            
+            <span>プライバシーポリシーに同意する</span>
+            
+          </label>
+        </div>
+
+        <div class="btn-wrapper">
+          <input type="submit" value="メールを送信します">
+        </div>
+      </form>
+
+      
+    </div>
+  </div>
+</body>
+</html>

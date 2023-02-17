@@ -1,0 +1,63 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+}
+​
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 90%;
+  }
+}
+​
+.contact-wrapper {
+  background-color: rgb(242, 242, 242);
+  padding: 30px;
+}
+​
+.field-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 30px;
+}
+​
+@media screen and (max-width: 1000px) {
+  .field-item {
+    flex-direction: column;
+  }
+}
+​
+.field-item label {
+  flex-basis: 25%;
+  font-weight: bold;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  margin-right: 5%;
+}
+​
+.require {
+  background-color: rgb(236, 31, 31);
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 8px;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.field-item input, textarea, select {
+  flex-basis: 70%;
+  padding: 10px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 3px;
+  outline: none;
+}
+@media screen and (max-width: 1000px) {
+  .field-item input, textarea, select {
+    width: calc(100% - 20px);
+  }
+  .field-item label {
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+}
